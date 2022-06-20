@@ -4,4 +4,4 @@
 
 ** https://store-data-service.services.dmtech.com/stores/nearby/52.17093349999975,8.328556500000587/1
 
-** 
+** https://uberall.com/api/storefinders/ALDINORDDE_UimhY3MWJaxhjK9QdZo3Qa4chq1MAu/settings/de
