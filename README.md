@@ -7,7 +7,7 @@ Hier entsteht aktuell eine Sammelstelle für interessante APIs. Für die Darstel
 
 Eine umfangreiche Liste dokumentierter APIs findet sich auf [bund.dev/apis](https://bund.dev/apis). Auf diesem API-Portal des Bundes finden Sie Dokumentationen zu Programmierschnittstellen von Verwaltungsleistungen und Informationsportalen des Bundes. Die Einträge der aktuellen Liste - sowie perspektivisch auch weitere Listen dokumentierter APIs - lassen sich auch [hier](https://andreasfischer1985.github.io/code-snippets/html/js_apiCollection.html) einsehen und nach Suchbegriffen filtern.
 
-Weitere dokumentierte APIs sind aktuell hier tabellarisch dokumentiert:
+Weitere dokumentierte APIs sind aktuell hier tabellarisch dargestellt:
 
 API | Description | Documentation | Exemplary request |
 |---|---|---|---|
