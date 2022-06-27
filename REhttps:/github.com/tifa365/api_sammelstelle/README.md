@@ -15,10 +15,6 @@ Die folgende Auflistung bezieht sowohl kommerzielle als auch nicht kommerzielle 
 | Tagesschau API | Über API stehen via www.tagesschau.de aktuelle Nachrichten und Medienbeiträge im JSON-Format zur Verfügung | Yes | https://tagesschau.api.bund.dev/ |  NaN |
 | Die Zeit-API zum Coronavirus | Über die hauseigene API der Zeit stehen aktuelle Daten zum Coronavirus bereit | not | https://tagesschau.api.bund.dev/ |  shorturl.at/gpvQY |
 
-## Hinzufügen 
-
-* Datawrapper API https://developer.datawrapper.de/docs/getting-started
-
 ## Nicht mehr funktionsfähig
 * https://developer.zeit.de/index/
 
