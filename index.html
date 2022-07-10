@@ -1,0 +1,70 @@
+<html>
+<body>
+<h1>API collection</h1>
+<label>Search term :</label>
+<input type="search" class="filter" data-for="#api-table" autofocus="autofocus">
+<br><br>
+<table id="api-table">
+<tbody id="data"></tbody>
+</table>
+<script>
+const myContainer = document.getElementById("data");
+
+function appendJSON(json,myContainer,level) {
+	const obj = JSON.parse(json);
+        const regex = /((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g;             
+	for (var i = 0; i<Object.keys(obj).length; i++){
+		var tr = document.createElement("tr"); 
+		if(level>0) {tr = document.createElement("div");}
+		tr.setAttribute("id", "tr"+"_"+level+"_"+i);
+		tr.setAttribute("class","level"+level);
+		var lab = Object.keys(obj)[i];
+		var elm = obj[Object.keys(obj)[i]];	
+		if (typeof elm != 'object' & elm != null) {
+			elm=elm.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+ 	        	var txt = '<td><strong>'+lab+' : </strong></td>';
+        		tr.innerHTML=txt;
+			var td = document.createElement("td");
+			td.innerHTML=elm;
+			tr.appendChild(td);
+			myContainer.appendChild(tr);
+			
+		} else if (elm != null){
+			var txt = '<td>'+lab+' : </td>';
+        		tr.innerHTML=txt;             
+			myContainer.appendChild(tr);
+			appendJSON(JSON.stringify(elm),tr,level+1);	
+		} 
+		 		
+	}
+
+}
+
+fetch('https://raw.githubusercontent.com/bundesAPI/apis/main/index.json')
+		 .then(function (response) { return response.json();})
+		 .then(function (data) { 
+			appendJSON(JSON.stringify(data),myContainer,0);
+			document.querySelectorAll('.filter').forEach(function(input) {
+    				var table = document.querySelector(input.dataset.for);
+   			 	var rows = table.querySelectorAll('tbody tr');
+    				input.addEventListener('input', function(event) {
+        				rows.forEach(function(tr) {
+           					tr.hidden = !tr.textContent.includes(input.value);
+        				});
+    				});
+			});           
+		})
+		 .catch(function (err){});
+</script>
+<style>
+table, th, td {
+  border: 1px solid;
+  padding: 5px;
+  text-align: left;
+  min-width: 35px
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: coral;}
+</style>
+</body>
+</html>
