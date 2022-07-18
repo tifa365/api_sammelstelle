@@ -1,0 +1,39 @@
+[
+  {
+    "name": "MediaWiki Action API",
+    "description": "This page provides an overview of the MediaWiki Action API. ",
+    "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
+    "exemplaryRequest": "https://de.wikipedia.org/w/api.php?action=parse&page=Chaos_Computer_Club&format=json"    
+  },
+  {
+    "name": "Tagesschau API",
+    "description": "Über API stehen auf www.tagesschau.de aktuelle Nachrichten und Medienbeiträge im JSON-Format zur Verfügung.",
+    "documentation": "https://bundesapi.github.io/tagesschau-api/",
+    "exemplaryRequest": "https://www.tagesschau.de/api2/homepage/"    
+  },
+  {
+    "name": "Die Zeit API zum Coronavirus",
+    "description": "Über die hauseigene API der Zeit stehen aktuelle Daten zum Coronavirus bereit.",
+    "documentation": "https://bundesapi.github.io/tagesschau-api/",
+    "exemplaryRequest": "https://hsr-cdn.zeit.de/corona/get/?query=query%20DetailCountryQuery($id:%20String!)%20{%20countries(where:%20{id:%20{_eq:%20$id}})%20{%20id%20name%20lastUpdated%20population%20casesIncidence%20casesTodayLive%20casesTotal%20casesTrend%20casesLastDay%20casesLastWeek%20casesLastDayNewPublished%20casesLastUpdated%20deadTodayLive%20deadTotal%20deadTrend%20deadLastWeek%20deadLastDay%20deadLastUpdated%20patientsCovid19Trend%20patientsCovid19%20bedsCovid19Percentage%20diviLastUpdated%20hospitalizationsIncidence%20hospitalizationsIncidenceFrozen%20hospitalizationsLastWeek%20hospitalizationsLastWeekFrozen%20hospitalizationsTrend%20hospitalizationsLastUpdated%20peopleFullyVaccinatedPer100Total%20peopleVaccinatedPer100Total%20peopleBoosterVaccinatedPer100Total%20peopleFourthVaccinatedPer100Total%20peopleFullyVaccinatedTotal%20vaccinationsTrend%20vaccinationsPer100Total%20vaccinationsLastWeek%20vaccinationDosesLastUpdated%20recoveredTotal%20__typename%20}%20}%20&operationName=DetailCountryQuery&variables={%22id%22:%22DE%22}"    
+  },
+  {
+    "name": "opencorporates API",
+    "description": "The API provides all the information available on the OpenCorporates website as data.",
+    "documentation": "http://api.opencorporates.com/documentation/API-Reference",
+    "exemplaryRequest": "https://api.opencorporates.com/v0.4/companies/gb/00102498"    
+  },
+  {
+    "name": "Aldi-Verkaufsfillialen API",
+    "description": "Auflistung von Aldiläden im Umkreis einer festen Koordinate.",
+    "documentation": null,
+    "exemplaryRequest": "https://uberall.com/api/storefinders/ALDINORDDE_UimhY3MWJaxhjK9QdZo3Qa4chq1MAu/settings/de"    
+  },
+  {
+    "name": "DM Drogerien in Deutschland API",
+    "description": "Findet die Orte von DM Drogerien im Umkreis einer Latitude/Longitue-Koordinate.",
+    "documentation": null,
+    "exemplaryRequest": "https://store-data-service.services.dmtech.com/stores/nearby/52.17093349999975,8.328556500000587/1"    
+  }
+]
+
