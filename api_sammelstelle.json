@@ -53,6 +53,12 @@
     "documentation": null,
     "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:500&zip=13335&productKey=13282708"    
   },
+      {
+    "name": "Hamburger Flughafen ankommende Flüge",
+    "description": "Daten über ankommende Flüge am Flughafen Hamburg",
+    "documentation": null,
+    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals"    
+  },
     {
     "name": "PEGELONLINE REST-API",
     "description": "Über die PEGELONLINE REST-API können die gewässerkundlichen Daten von PEGELONLINE auf einfache Weise abgefragt werden.",
