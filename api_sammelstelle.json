@@ -3,7 +3,7 @@
     "name": "Tagesschau API",
     "description": "Über API stehen auf www.tagesschau.de aktuelle Nachrichten und Medienbeiträge im JSON-Format zur Verfügung.",
     "documentation": "https://bundesapi.github.io/tagesschau-api/",
-    "exemplaryRequest": "https://www.tagesschau.de/api2/homepage/"
+    "exemplaryRequest": "https://www.tagesschau.de/api2/homepage/",
     "category": "bund.dev"
   },
   {
@@ -69,7 +69,7 @@
     "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:100&zip=13335",
     "category": "shopping"
   },
-      {
+  {
     "name": "Bauhaus Produktverfügbarkeit per Filliale API",
     "description": "Auffinden von Produkten in festgelegten Fillialen",
     "documentation": null,
