@@ -35,6 +35,12 @@
     "documentation": null,
     "exemplaryRequest": "https://store-data-service.services.dmtech.com/stores/nearby/52.17093349999975,8.328556500000587/1"    
   },
+  {
+    "name": "Frankfurt Airport Arrivals and Departures API",
+    "description": "Receive arrivals, departures, flight numbers etc. from Frankfurt Aiport",
+    "documentation": null,
+    "exemplaryRequest": "https://www.frankfurt-airport.com/de/_jcr_content.flights.json/filter?perpage=10&lang=de-DE&page=1&flighttype=arrivals&time=2022-07-10T15%3A04%3A00.000Z"    
+  },
     {
     "name": "PEGELONLINE REST-API",
     "description": "Über die PEGELONLINE REST-API können die gewässerkundlichen Daten von PEGELONLINE auf einfache Weise abgefragt werden.",
