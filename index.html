@@ -1,7 +1,7 @@
 <html>
 <body>
-<h1>API collection</h1>
-<label>Search term :</label>
+<h1>API Kollektion</h1>
+<label>Suchbegriff : </label>
 <input type="search" class="filter" data-for="#api-table" autofocus="autofocus">
 <br><br>
 <table id="api-table">
@@ -12,13 +12,13 @@ const myContainer = document.getElementById("data");
 
 function appendJSON(json,myContainer,level) {
 	const obj = JSON.parse(json);	
-        const regex = /((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g;   
+        const regex = /((http|https|ftp):\/\/[\w?=&.,\(\)\{\}$!\/-;#~%-]+(?![\w\s?&.,\(\)\{\}$!\/;#~%"=-]*>))/g;   
 	var oc=0; 
 	var lastOffice="";         
 	for (var i = 0; i<Object.keys(obj).length; i++){
 
- 		if(lastOffice!=JSON.stringify(obj[[i]][["office"]])){
-			lastOffice=JSON.stringify(obj[[i]][["office"]]);
+ 		if(lastOffice!=JSON.stringify(obj[[i]][["category"]])){
+			lastOffice=JSON.stringify(obj[[i]][["category"]]);
 			oc=oc+1;
 			var div = document.createElement("div"); 	
 			div.setAttribute("id", "div"+"_"+oc);
@@ -29,22 +29,28 @@ function appendJSON(json,myContainer,level) {
 			details.open = true;
 			var summary = document.createElement("summary");
 			summary.innerHTML="<strong>"+
-				(obj[[i]][["office"]])+"<strong>";
+				(obj[[i]][["category"]])+"<strong>";
 			details.style.width="800";
 			details.appendChild(summary);
 			var tr = document.createElement("tr");		
 			var td = document.createElement("td");
-			td.style.width="66%";
+                        var ob = obj[[i]][["name"]];
+                        if(ob == null) ob="n.a.";
+			td.style.width="33%";
 			td.innerHTML="<strong>"+
-				(obj[[i]][["name"]])+":</strong><br> "+JSON.stringify(obj[[i]][["description"]]);
+				ob +":</strong><br> "+obj[[i]][["description"]];
 			tr.appendChild(td);
 			td = document.createElement("td");
+			ob = obj[[i]][["documentation"]];
+                        if(ob == null) ob="n.a.";
 			td.innerHTML="<strong>Dokumentation:</strong><br> "+
-				JSON.stringify(obj[[i]][["documentationURL"]]).replace(regex,"<a href='$1' target='_blank'>$1</a>");
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
 			tr.appendChild(td);
 			td = document.createElement("td");
-			td.innerHTML="<strong>GitHub:</strong><br> "+
-				JSON.stringify(obj[[i]][["githubURL"]]).replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			ob=obj[[i]][["exemplaryRequest"]];
+                        if(ob == null) ob="n.a.";
+			td.innerHTML="<strong>Beispiel:</strong><br> "+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
 			tr.appendChild(td);
 			details.appendChild(tr);
 			div.appendChild(details);
@@ -52,17 +58,23 @@ function appendJSON(json,myContainer,level) {
 			var details = document.getElementById("details"+"_"+oc);			
 			var tr = document.createElement("tr");		
 			var td = document.createElement("td");
-			td.style.width="66%";
+			var ob = obj[[i]][["name"]];
+                        if(ob == null) ob="n.a.";
+			td.style.width="33%";
 			td.innerHTML="<strong>"+
-				(obj[[i]][["name"]])+":</strong><br> "+JSON.stringify(obj[[i]][["description"]]);
-			tr.appendChild(td);
-			td = document.createElement("td");	
-			td.innerHTML="<strong>Dokumentation:</strong><br> "+
-				JSON.stringify(obj[[i]][["documentationURL"]]).replace(regex,"<a href='$1' target='_blank'>$1</a>");
+				ob+":</strong><br> "+obj[[i]][["description"]];
 			tr.appendChild(td);
 			td = document.createElement("td");
-			td.innerHTML="<strong>GitHub:</strong><br> "+
-				JSON.stringify(obj[[i]][["githubURL"]]).replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			ob = obj[[i]][["documentation"]];
+			if(ob == null) ob="n.a.";
+			td.innerHTML="<strong>Dokumentation:</strong><br> "+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			tr.appendChild(td);
+			td = document.createElement("td");
+			ob = obj[[i]][["exemplaryRequest"]];
+			if(ob == null) ob="n.a.";
+			td.innerHTML="<strong>Beispiel:</strong><br> "+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
 			tr.appendChild(td);
 			details.appendChild(tr);
 		}
@@ -72,7 +84,7 @@ function appendJSON(json,myContainer,level) {
 
 }
 
-fetch('https://raw.githubusercontent.com/bundesAPI/apis/main/index.json')
+fetch('https://raw.githubusercontent.com/tifa365/api_sammelstelle/main/api_sammelstelle.json')
 		 .then(function (response) { return response.json();})
 		 .then(function (data) { 
 			appendJSON(JSON.stringify(data),myContainer,0);
