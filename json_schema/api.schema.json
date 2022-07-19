@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tifa365.github.io/api_sammelstelle/json_schema/api.schema.json",
+  "title": "APIs",
+  "description": "An API Schema for the API Sammelstelle Catalog",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The unique identifier for the API",
+      "type": "string"
+    },
+    "description": {
+      "description": "A short description, what the API does",
+      "type": "string"
+    },
+     "documentation": {
+      "documentation": "Link to the documentation of the APi, set null if na",
+      "type": "string"
+    },
+     "exemplaryRequest": {
+      "description": "Exemplary URL of API with a request for data",
+      "type": "string"
+    }
+  	},
+  "required": [ "name", "description", "documentation", "exemplaryRequest"  ]
+}
