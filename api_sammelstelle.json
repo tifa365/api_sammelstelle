@@ -54,10 +54,28 @@
     "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:500&zip=13335&productKey=13282708"    
   },
       {
-    "name": "Hamburger Flughafen ankommende Flüge",
+    "name": "Hamburger Flughafen ankommende Flüge API",
     "description": "Daten über ankommende Flüge am Flughafen Hamburg",
     "documentation": null,
     "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals"    
+  },
+  {
+    "name": "FixMy Berlin API für Fahrradweg-Planungen",
+    "description": "Daten über geplante Radwege im Berliner Stadtraum",
+    "documentation": "https://fixmyberlin.de/api",
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/projects"    
+  },
+  {
+    "name": "FixMy Berlin API für Radweg-Planungsabschnitte",
+    "description": "Daten über geplante Fahrradwegabschnitte inkl. Happy-Bike-Index",
+    "documentation": "https://fixmyberlin.de/api",
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/sections"    
+  },
+  {
+    "name": "FixMy Berlin API für Meldungen von Radbügeln für Friedrichshain",
+    "description": "API um Radbügel in Friedrichshain zu identifizieren",
+    "documentation": "https://fixmyberlin.de/api",
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/reports"    
   },
     {
     "name": "PEGELONLINE REST-API",
