@@ -12,3 +12,7 @@ jobs:
         env:
           INPUT_SCHEMA: /json_schema/api.schema.json
           INPUT_JSONS: ./api_sammelstelle.json
+      - name: json-syntax-check
+        uses: limitusus/json-syntax-check@v1
+        with:
+          pattern: "\\.json$"

@@ -20,6 +20,10 @@
      "exemplaryRequest": {
       "description": "Exemplary URL of API with a request for data",
       "type": "string"
+    },
+    "category": {
+      "documentation": "A category the API is sorted to",
+      "type": "string"
     }
   	},
   "required": [ "name", "description", "documentation", "exemplaryRequest"  ]

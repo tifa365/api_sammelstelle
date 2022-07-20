@@ -1,87 +1,108 @@
 [
   {
-    "name": "MediaWiki Action API",
-    "description": "This page provides an overview of the MediaWiki Action API. ",
-    "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
-    "exemplaryRequest": "https://de.wikipedia.org/w/api.php?action=parse&page=Chaos_Computer_Club&format=json"    
-  },
-  {
     "name": "Tagesschau API",
     "description": "Über API stehen auf www.tagesschau.de aktuelle Nachrichten und Medienbeiträge im JSON-Format zur Verfügung.",
     "documentation": "https://bundesapi.github.io/tagesschau-api/",
-    "exemplaryRequest": "https://www.tagesschau.de/api2/homepage/"    
+    "exemplaryRequest": "https://www.tagesschau.de/api2/homepage/",
+    "category": "bund.dev"
   },
   {
-    "name": "Die Zeit API zum Coronavirus",
-    "description": "Über die hauseigene API der Zeit stehen aktuelle Daten zum Coronavirus bereit.",
-    "documentation": "https://bundesapi.github.io/tagesschau-api/",
-    "exemplaryRequest": "https://hsr-cdn.zeit.de/corona/get/?query=query%20DetailCountryQuery($id:%20String!)%20{%20countries(where:%20{id:%20{_eq:%20$id}})%20{%20id%20name%20lastUpdated%20population%20casesIncidence%20casesTodayLive%20casesTotal%20casesTrend%20casesLastDay%20casesLastWeek%20casesLastDayNewPublished%20casesLastUpdated%20deadTodayLive%20deadTotal%20deadTrend%20deadLastWeek%20deadLastDay%20deadLastUpdated%20patientsCovid19Trend%20patientsCovid19%20bedsCovid19Percentage%20diviLastUpdated%20hospitalizationsIncidence%20hospitalizationsIncidenceFrozen%20hospitalizationsLastWeek%20hospitalizationsLastWeekFrozen%20hospitalizationsTrend%20hospitalizationsLastUpdated%20peopleFullyVaccinatedPer100Total%20peopleVaccinatedPer100Total%20peopleBoosterVaccinatedPer100Total%20peopleFourthVaccinatedPer100Total%20peopleFullyVaccinatedTotal%20vaccinationsTrend%20vaccinationsPer100Total%20vaccinationsLastWeek%20vaccinationDosesLastUpdated%20recoveredTotal%20__typename%20}%20}%20&operationName=DetailCountryQuery&variables={%22id%22:%22DE%22}"    
+    "name": "PEGELONLINE REST-API",
+    "description": "Über die PEGELONLINE REST-API können die gewässerkundlichen Daten von PEGELONLINE auf einfache Weise abgefragt werden.",
+    "documentation": "https://www.pegelonline.wsv.de/webservice/dokuRestapi",
+    "exemplaryRequest": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations.json?includeTimeseries=true&includeCurrentMeasurement=true",
+    "category": "data" 
   },
   {
     "name": "opencorporates API",
     "description": "The API provides all the information available on the OpenCorporates website as data.",
     "documentation": "http://api.opencorporates.com/documentation/API-Reference",
-    "exemplaryRequest": "https://api.opencorporates.com/v0.4/companies/gb/00102498"    
+    "exemplaryRequest": "https://api.opencorporates.com/v0.4/companies/gb/00102498",
+    "category": "data" 
   },
   {
-    "name": "Aldi-Verkaufsfillialen API",
-    "description": "Auflistung von Aldiläden im Umkreis einer festen Koordinate.",
-    "documentation": null,
-    "exemplaryRequest": "https://uberall.com/api/storefinders/ALDINORDDE_UimhY3MWJaxhjK9QdZo3Qa4chq1MAu/settings/de"    
-  },
-  {
-    "name": "DM Drogerien in Deutschland API",
-    "description": "Findet die Orte von DM Drogerien im Umkreis einer Latitude/Longitue-Koordinate.",
-    "documentation": null,
-    "exemplaryRequest": "https://store-data-service.services.dmtech.com/stores/nearby/52.17093349999975,8.328556500000587/1"    
+    "name": "MediaWiki Action API",
+    "description": "This page provides an overview of the MediaWiki Action API. ",
+    "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
+    "exemplaryRequest": "https://de.wikipedia.org/w/api.php?action=parse&page=Chaos_Computer_Club&format=json",
+    "category": "data"
   },
   {
     "name": "Frankfurt Airport Arrivals and Departures API",
     "description": "Receive arrivals, departures, flight numbers etc. from Frankfurt Aiport",
     "documentation": null,
-    "exemplaryRequest": "https://www.frankfurt-airport.com/de/_jcr_content.flights.json/filter?perpage=10&lang=de-DE&page=1&flighttype=arrivals&time=2022-07-10T15%3A04%3A00.000Z"    
+    "exemplaryRequest": "https://www.frankfurt-airport.com/de/_jcr_content.flights.json/filter?perpage=10&lang=de-DE&page=1&flighttype=arrivals&time=2022-07-10T15%3A04%3A00.000Z",
+    "category": "aviation"  
   },
-    {
+  {
+    "name": "Hamburger Flughafen ankommende Flüge",
+    "description": "Daten über ankommende Flüge am Flughafen Hamburg",
+    "documentation": null,
+    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals",
+    "category": "aviation"    
+  },
+  {
+    "name": "Die Zeit API zum Coronavirus",
+    "description": "Über die hauseigene API der Zeit stehen aktuelle Daten zum Coronavirus bereit.",
+    "documentation": "https://bundesapi.github.io/tagesschau-api/",
+    "exemplaryRequest": "https://hsr-cdn.zeit.de/corona/get/?query=query%20DetailCountryQuery($id:%20String!)%20{%20countries(where:%20{id:%20{_eq:%20$id}})%20{%20id%20name%20lastUpdated%20population%20casesIncidence%20casesTodayLive%20casesTotal%20casesTrend%20casesLastDay%20casesLastWeek%20casesLastDayNewPublished%20casesLastUpdated%20deadTodayLive%20deadTotal%20deadTrend%20deadLastWeek%20deadLastDay%20deadLastUpdated%20patientsCovid19Trend%20patientsCovid19%20bedsCovid19Percentage%20diviLastUpdated%20hospitalizationsIncidence%20hospitalizationsIncidenceFrozen%20hospitalizationsLastWeek%20hospitalizationsLastWeekFrozen%20hospitalizationsTrend%20hospitalizationsLastUpdated%20peopleFullyVaccinatedPer100Total%20peopleVaccinatedPer100Total%20peopleBoosterVaccinatedPer100Total%20peopleFourthVaccinatedPer100Total%20peopleFullyVaccinatedTotal%20vaccinationsTrend%20vaccinationsPer100Total%20vaccinationsLastWeek%20vaccinationDosesLastUpdated%20recoveredTotal%20__typename%20}%20}%20&operationName=DetailCountryQuery&variables={%22id%22:%22DE%22}",
+    "category": "covid"
+  },
+  {
+    "name": "Aldi-Verkaufsfillialen API",
+    "description": "Auflistung von Aldiläden im Umkreis einer festen Koordinate.",
+    "documentation": null,
+    "exemplaryRequest": "https://uberall.com/api/storefinders/ALDINORDDE_UimhY3MWJaxhjK9QdZo3Qa4chq1MAu/settings/de",
+    "category": "shopping"
+  },
+  {
+    "name": "DM Drogerien in Deutschland API",
+    "description": "Findet die Orte von DM Drogerien im Umkreis einer Latitude/Longitue-Koordinate.",
+    "documentation": null,
+    "exemplaryRequest": "https://store-data-service.services.dmtech.com/stores/nearby/52.17093349999975,8.328556500000587/1",
+    "category": "shopping"
+  },
+  {
     "name": "Bauhaus Fillialsuche API",
     "description": "Auffinden von Bauhaus-Fillialen innerhalb eines festgelegten Radius",
     "documentation": null,
-    "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:100&zip=13335"    
+    "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:100&zip=13335",
+    "category": "shopping"
   },
-      {
+  {
     "name": "Bauhaus Produktverfügbarkeit per Filliale API",
     "description": "Auffinden von Produkten in festgelegten Fillialen",
     "documentation": null,
-    "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:500&zip=13335&productKey=13282708"    
+    "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:500&zip=13335&productKey=13282708",    
+    "category": "shopping"
   },
       {
     "name": "Hamburger Flughafen ankommende Flüge API",
     "description": "Daten über ankommende Flüge am Flughafen Hamburg",
     "documentation": null,
-    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals"    
+    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals",
+    "category": "aviation"    
   },
   {
     "name": "FixMy Berlin API für Fahrradweg-Planungen",
     "description": "Daten über geplante Radwege im Berliner Stadtraum",
     "documentation": "https://fixmyberlin.de/api",
-    "exemplaryRequest": "https://fixmyberlin.de/api/v1/projects"    
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/projects",
+    "category": "public transport" 
   },
   {
     "name": "FixMy Berlin API für Radweg-Planungsabschnitte",
     "description": "Daten über geplante Fahrradwegabschnitte inkl. Happy-Bike-Index",
     "documentation": "https://fixmyberlin.de/api",
-    "exemplaryRequest": "https://fixmyberlin.de/api/v1/sections"    
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/sections",
+    "category": "public transport"     
   },
   {
     "name": "FixMy Berlin API für Meldungen von Radbügeln für Friedrichshain",
     "description": "API um Radbügel in Friedrichshain zu identifizieren",
     "documentation": "https://fixmyberlin.de/api",
-    "exemplaryRequest": "https://fixmyberlin.de/api/v1/reports"    
-  },
-    {
-    "name": "PEGELONLINE REST-API",
-    "description": "Über die PEGELONLINE REST-API können die gewässerkundlichen Daten von PEGELONLINE auf einfache Weise abgefragt werden.",
-    "documentation": "https://www.pegelonline.wsv.de/webservice/dokuRestapi",
-    "exemplaryRequest": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations.json?includeTimeseries=true&includeCurrentMeasurement=true"    
+    "exemplaryRequest": "https://fixmyberlin.de/api/v1/reports",
+    "category": "public transport"     
   }
 ]
 
