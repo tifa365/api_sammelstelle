@@ -103,6 +103,13 @@
     "documentation": "https://fixmyberlin.de/api",
     "exemplaryRequest": "https://fixmyberlin.de/api/v1/reports",
     "category": "public transport"     
+  },
+  {
+    "name": "API ZEIT Energie Dashboard",
+    "description": "API für die visuelle Darstellung der Energiedaten auf dem ZEIT Dashboard",
+    "documentation": null,
+    "exemplaryRequest": "https://hsr.prod.zg.zon.zeit.de/energiemonitor/api/rest/dashboard",
+    "category": "press"     
   }
 ]
 
