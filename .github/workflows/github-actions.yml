@@ -16,5 +16,10 @@ jobs:
         uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\.json$"
-      - name: 'restqa-404-links'
-        uses: restqa/404-links@v2.2.0
+
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 'restqa-404-links'
+      uses: restqa/404-links@v2.2.0
