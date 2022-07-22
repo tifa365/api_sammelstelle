@@ -42,6 +42,13 @@
     "category": "aviation"    
   },
   {
+    "name": "Hamburger Flughafen Abflüge",
+    "description": "Daten über Abflüge am Flughafen Hamburg",
+    "documentation": null,
+    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/departures",
+    "category": "aviation"    
+  },
+  {
     "name": "Die Zeit API zum Coronavirus",
     "description": "Über die hauseigene API der Zeit stehen aktuelle Daten zum Coronavirus bereit.",
     "documentation": "https://bundesapi.github.io/tagesschau-api/",
@@ -76,13 +83,6 @@
     "exemplaryRequest": "https://www.bauhaus.info/ajax/fachcentren/fachcentrensuche?q=:relevance:radius:500&zip=13335&productKey=13282708",    
     "category": "shopping"
   },
-      {
-    "name": "Hamburger Flughafen ankommende Flüge API",
-    "description": "Daten über ankommende Flüge am Flughafen Hamburg",
-    "documentation": null,
-    "exemplaryRequest": "https://www.hamburg-airport.de/service/flightdata/arrivals",
-    "category": "aviation"    
-  },
   {
     "name": "FixMy Berlin API für Fahrradweg-Planungen",
     "description": "Daten über geplante Radwege im Berliner Stadtraum",
@@ -103,6 +103,20 @@
     "documentation": "https://fixmyberlin.de/api",
     "exemplaryRequest": "https://fixmyberlin.de/api/v1/reports",
     "category": "public transport"     
+  },
+  {
+    "name": "Paulaner Produktsuche API",
+    "description": "Verfügbare Paulanerprodukte in Verkaufsstellen eines festgelegten Radius",
+    "documentation": null,
+    "exemplaryRequest": "https://geosearch.paulaner.de/api/v1/brand/Paulaner/product/all/lng/13.2870699/lat/52.5212611/radius/50",
+    "category": "commercial"     
+  },
+  {
+    "name": "DRK Blutspendetermine API",
+    "description": "Blutspendemöglichkeiten innrhalb eines festgelgten Zeitraums und Orts",
+    "documentation": null,
+    "exemplaryRequest": "https://www.drk-blutspende.de/blutspendetermine/termine.rss?county_id=11000&date_from=2022-07-22&date_to=2022-08-31&radius=75&term=13355+Berlin",
+    "category": "health"     
   },
   {
     "name": "API ZEIT Energie Dashboard",
