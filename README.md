@@ -1,4 +1,5 @@
 [![Validate JSONs](https://github.com/tifa365/api_sammelstelle/actions/workflows/github-actions.yml/badge.svg)](https://github.com/tifa365/api_sammelstelle/actions/workflows/github-actions.yml)
+[![pages-build-deployment](https://github.com/tifa365/api_sammelstelle/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tifa365/api_sammelstelle/actions/workflows/pages/pages-build-deployment)
 
 # API-Sammelstelle
 
