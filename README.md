@@ -3,7 +3,7 @@
 
 # API-Sammelstelle
 
-In diesem Repository entsteht aktuell eine Sammelstelle für interessante APIs. Die Liste gesammelter APIs lässt sich online inspizieren:
+In diesem Repository entsteht aktuell eine Sammelstelle für interessante APIs aus dem deutschen Kontext. Die Liste gesammelter APIs lässt sich online einsehen:
 [https://tifa365.github.io/api_sammelstelle/index.html](https://tifa365.github.io/api_sammelstelle/index.html).
 
 ## Weitere API-Zusammenstellungen
