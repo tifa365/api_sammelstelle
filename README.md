@@ -1,3 +1,5 @@
+[![Validate JSONs](https://github.com/tifa365/api_sammelstelle/actions/workflows/github-actions.yml/badge.svg)](https://github.com/tifa365/api_sammelstelle/actions/workflows/github-actions.yml)
+
 # API-Sammelstelle
 
 In diesem Repository entsteht aktuell eine Sammelstelle für interessante APIs. Die Liste gesammelter APIs lässt sich online inspizieren:
