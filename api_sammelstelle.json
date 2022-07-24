@@ -115,8 +115,15 @@
     "name": "DRK Blutspendetermine API",
     "description": "Blutspendemöglichkeiten innrhalb eines festgelgten Zeitraums und Orts",
     "documentation": null,
-    "exemplaryRequest": "https://www.drk-blutspende.de/blutspendetermine/termine.rss?county_id=11000&date_from=2022-07-22&date_to=2022-08-31&radius=75&term=13355+Berlin",
+    "exemplaryRequest": "https://www.drk-blutspende.de/blutspendetermine/termine.rss?date_from=2022-07-24&date_to=2022-08-07&radius=25&term=Bielefeld",
     "category": "health"     
+  },
+    {
+    "name": "Pegelstände Bayrischer Seen",
+    "description": "Pegelstände Bayrischer Seen, Datumsabfrage noch unbekannt",
+    "documentation": null,
+    "exemplaryRequest": "https://www.gkd.bayern.de/files/karten/bayern.json",
+    "category": "environment"     
   },
   {
     "name": "API ZEIT Energie Dashboard",
