@@ -11,7 +11,7 @@
     "description": "Über die PEGELONLINE REST-API können die gewässerkundlichen Daten von PEGELONLINE auf einfache Weise abgefragt werden.",
     "documentation": "https://www.pegelonline.wsv.de/webservice/dokuRestapi",
     "exemplaryRequest": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations.json?includeTimeseries=true&includeCurrentMeasurement=true",
-    "category": "data" 
+    "category": "environment" 
   },
   {
     "name": "opencorporates API",
@@ -125,12 +125,19 @@
     "exemplaryRequest": "https://www.gkd.bayern.de/files/karten/bayern.json",
     "category": "environment"     
   },
-  {
+      {
+    "name": "Flixbus Verbindungs-API",
+    "description": "Anzeige der Busse von Stadt X nach Stadt Y und ihrer Features",
+    "documentation": null,
+    "exemplaryRequest": "https://global.api.flixbus.com/search/service/v4/search?from_city_id=40d8f682-8646-11e6-9066-549f350fcb0c&to_city_id=40d901a5-8646-11e6-9066-549f350fcb0c&departure_date=24.07.2022&products=%7B%22adult%22%3A1%7D&currency=EUR&locale=de&search_by=cities&include_after_midnight_rides=0",
+    "category": "transportation"     
+  },
+         {
     "name": "API ZEIT Energie Dashboard",
     "description": "API für die visuelle Darstellung der Energiedaten auf dem ZEIT Dashboard",
     "documentation": null,
     "exemplaryRequest": "https://hsr.prod.zg.zon.zeit.de/energiemonitor/api/rest/dashboard",
-    "category": "press"     
+    "category": "energy"     
   }
 ]
 
