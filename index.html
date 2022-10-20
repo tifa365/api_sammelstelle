@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>API Kollektion</h1>
+<h1>API Sammelstelle</h1>
 <label>Suchbegriff : </label>
 <input type="search" class="filter" data-for="#api-table" autofocus="autofocus">
 <br><br>
@@ -30,27 +30,25 @@ function appendJSON(json,myContainer,level) {
 			var summary = document.createElement("summary");
 			summary.innerHTML="<strong>"+
 				(obj[[i]][["category"]])+"<strong>";
-			details.style.width="800";
 			details.appendChild(summary);
 			var tr = document.createElement("tr");		
 			var td = document.createElement("td");
                         var ob = obj[[i]][["name"]];
                         if(ob == null) ob="n.a.";
-			td.style.width="33%";
 			td.innerHTML="<strong>"+
-				ob +":</strong><br> "+obj[[i]][["description"]];
+				ob +":</strong><br><small>"+obj[[i]][["description"]]+"</small>";
 			tr.appendChild(td);
 			td = document.createElement("td");
 			ob = obj[[i]][["documentation"]];
                         if(ob == null) ob="n.a.";
-			td.innerHTML="<strong>Dokumentation:</strong><br> "+
-				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			td.innerHTML="<strong>Dokumentation:</strong><br><small>"+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a></small>");
 			tr.appendChild(td);
 			td = document.createElement("td");
 			ob=obj[[i]][["exemplaryRequest"]];
                         if(ob == null) ob="n.a.";
-			td.innerHTML="<strong>Beispiel:</strong><br> "+
-				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			td.innerHTML="<strong>Beispiel:</strong><br><small>"+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a></small>");
 			tr.appendChild(td);
 			details.appendChild(tr);
 			div.appendChild(details);
@@ -60,21 +58,20 @@ function appendJSON(json,myContainer,level) {
 			var td = document.createElement("td");
 			var ob = obj[[i]][["name"]];
                         if(ob == null) ob="n.a.";
-			td.style.width="33%";
 			td.innerHTML="<strong>"+
-				ob+":</strong><br> "+obj[[i]][["description"]];
+				ob+":</strong><br><small>"+obj[[i]][["description"]]+"</small>";
 			tr.appendChild(td);
 			td = document.createElement("td");
 			ob = obj[[i]][["documentation"]];
 			if(ob == null) ob="n.a.";
-			td.innerHTML="<strong>Dokumentation:</strong><br> "+
-				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			td.innerHTML="<strong>Dokumentation:</strong><br><small>"+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a></small>");
 			tr.appendChild(td);
 			td = document.createElement("td");
 			ob = obj[[i]][["exemplaryRequest"]];
 			if(ob == null) ob="n.a.";
-			td.innerHTML="<strong>Beispiel:</strong><br> "+
-				ob.replace(regex,"<a href='$1' target='_blank'>$1</a>");
+			td.innerHTML="<strong>Beispiel:</strong><br><small>"+
+				ob.replace(regex,"<a href='$1' target='_blank'>$1</a></small>");
 			tr.appendChild(td);
 			details.appendChild(tr);
 		}
@@ -105,7 +102,13 @@ table, th, td {
   border: 1px solid;
   padding: 5px;
   text-align: left;
-  min-width: 35px
+}
+details {
+  width:1024;
+}
+td {
+  max-width:325;
+  min-width:325;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 tr:hover {background-color: coral;}
